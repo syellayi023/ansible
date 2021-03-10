@@ -4,10 +4,9 @@
   tasks:
     - name:
       copy:
-        module: git
-        repo: git://syellayi023/ansible.git
-        src: test.sh
-        dest: /tmp/test
+       src: test.sh
+       dest: /tmp/test
+      remote_src: yes
         
        
     - name:
