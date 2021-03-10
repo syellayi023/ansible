@@ -1,18 +1,17 @@
--
-  name: execute a script
-  hosts: 127.0.0.1
+---
+- hosts: 127.0.0.1
   connection: local
   tasks:
-    -
-      name:
+    - name:
       local_action:
         module: git
-        repo: https://github.com/syellayi023/ansible
+        repo: git://syellayi023/ansible.git
         dest: /tmp/test
         
-        
-      command: ./test.sh
-     
+       
+     - name:
+       command: sh /tmp/test/test.sh
+       delegate_to: 127.0.0.1
      
     
       
