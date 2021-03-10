@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name:
-      local_action:
+      copy:
         module: git
         repo: git://syellayi023/ansible.git
         dest: /tmp/test
