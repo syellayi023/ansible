@@ -9,6 +9,7 @@
         src: /test.sh
         dest: /tmp/test.sh
         mode: 0644
+        remote_src: yes
       delegate_to: localhost
       run_once: yes
     -
