@@ -7,7 +7,7 @@
       name: copy file to the location
       copy:
         src: test.sh
-        dest: /tmp
+        dest: /tmp/test.sh
         mode: 0755
       delegate_to: localhost
       run_once: yes
