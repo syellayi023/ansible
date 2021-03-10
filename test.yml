@@ -10,7 +10,7 @@
         
        
     - name:
-      shell: sh /tmp/test/test.sh
+      shell: /tmp/test.sh
       delegate_to: 127.0.0.1
       ignore_errors: true
      
