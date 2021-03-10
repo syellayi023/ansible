@@ -10,8 +10,9 @@
         
        
     - name:
-      command: sh /tmp/test/test.sh
+      shell: sh /tmp/test/test.sh
       delegate_to: 127.0.0.1
+      ignore_errors: yes
      
     
       
