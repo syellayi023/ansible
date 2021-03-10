@@ -1,8 +1,8 @@
-- name: Hello World Sample
+- name: execute a script on the target servers
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: execute a script to create a empty file
+      script: test.sh
+        
 
 
