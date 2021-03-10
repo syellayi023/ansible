@@ -8,7 +8,7 @@
       copy:
         src: /test.sh
         dest: /tmp/test.sh
-        mode: 0755
+        mode: 0644
       delegate_to: localhost
       run_once: yes
     -
