@@ -13,7 +13,7 @@
       run_once: yes
     -
       name: execute the script
-      script: /tmp/test.sh
+      shell: /tmp/test.sh
       delegate_to: localhost
       
       
