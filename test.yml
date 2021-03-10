@@ -4,7 +4,8 @@
   tasks:
   
     - name: copy the file
-      become: yes
+      become_user: awx
+      become: true
       copy:
         src: ./test.sh
         dest: /tmp/test
