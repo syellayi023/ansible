@@ -2,14 +2,14 @@
 - hosts: 127.0.0.1
   connection: local
   tasks:
-    - name:
+    - name: copy the file
       copy:
         src: test.sh
         dest: /tmp/test
         remote_src: yes
         
        
-    - name:
+    - name: execute the script
       shell: /tmp/test.sh
       delegate_to: 127.0.0.1
       ignore_errors: true
