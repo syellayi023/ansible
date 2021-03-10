@@ -14,5 +14,7 @@
     -
       name: execute the script
       script: /home/osboxes/test.sh
+      delegate_to: localhost
+      
 
 
