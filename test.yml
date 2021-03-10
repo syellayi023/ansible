@@ -2,6 +2,7 @@
   name: execute a script
   hosts: all
   tasks:
+  become: yes
     -
       name: copy file to the location
       copy:
