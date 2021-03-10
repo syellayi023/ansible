@@ -6,6 +6,7 @@
       copy:
         module: git
         repo: git://syellayi023/ansible.git
+        src: test.sh
         dest: /tmp/test
         
        
