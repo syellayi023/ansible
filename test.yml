@@ -2,7 +2,9 @@
 - hosts: 127.0.0.1
   connection: local
   tasks:
+  
     - name: copy the file
+      become: yes
       copy:
         src: ./test.sh
         dest: /tmp/test
