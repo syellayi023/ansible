@@ -4,12 +4,10 @@
   tasks:
   
     - name: copy the file
-      become_user: osboxes
-      become: true
-      become_method: su
+      become: true  
       copy:
-        src: ./test.sh
-        dest: /tmp/test
+        src: test.sh
+        dest: :/tmp/test
         remote_src: yes
         
        
