@@ -3,7 +3,8 @@
   connection: local
   tasks:
   
-    - name: copy the file
+    - name: copy the file 
+      become_user: root
       become: true  
       copy:
         src: test.sh
