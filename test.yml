@@ -4,9 +4,9 @@
   tasks:
     - name:
       copy:
-       src: test.sh
-       dest: /tmp/test
-      remote_src: yes
+        src: test.sh
+        dest: /tmp/test
+        remote_src: yes
         
        
     - name:
