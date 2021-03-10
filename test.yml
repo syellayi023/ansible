@@ -4,8 +4,14 @@
   connection: local
   tasks:
     -
-      name: 
-      script: /test.sh
+      name:
+      local_action:
+        module: git
+        repo: https://github.com/syellayi023/ansible
+        dest: /tmp/test
+        
+        
+      command: ./test.sh
      
      
     
