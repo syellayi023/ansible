@@ -1,6 +1,7 @@
 -
   name: execute a script
-  hosts: localhost
+  hosts: 127.0.0.1
+  connection: local
   tasks:
     -
       name: copy file to the location
@@ -9,11 +10,11 @@
         dest: /tmp/test.sh
         mode: 0644
         remote_src: yes
-      delegate_to: localhost
+      delegate_to: 127.0.0.1
       run_once: yes
     -
       name: execute the script
-      shell: /tmp/test.sh
+      cmd: sh /tmp/test.sh
       delegate_to: localhost
       
       
