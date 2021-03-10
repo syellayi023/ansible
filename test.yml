@@ -4,7 +4,7 @@
   tasks:
   
     - name: copy the file
-      become_user: awx
+      become_user: osboxes
       become: true
       become_method: su
       copy:
