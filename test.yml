@@ -4,19 +4,11 @@
   connection: local
   tasks:
     -
-      name: copy file to the location
-      copy:
-        src: /test.sh
-        dest: /tmp/test.sh
-        mode: 0644
-        remote_src: yes
-      delegate_to: 127.0.0.1
-      run_once: yes
-    -
-      name: execute the script
-      ansible.builtin.command:
-        cmd: sh /tmp/test.sh
-      delegate_to: 127.0.0.1
+      name: 
+      script: /test.sh
+     
+     
+    
       
       
       
