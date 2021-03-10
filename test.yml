@@ -1,8 +1,17 @@
-- name: execute a script on the target servers
+-
+  name: execute a script
   hosts: all
   tasks:
-    - name: execute a script to create a empty file
-      script: test.sh
-        
+    -
+      name: copy file to the location
+      copy:
+        src: test.sh
+        dest: /tmp
+        mode: 0755
+      delegate_to: localhost
+      run_once: yes
+    -
+      name: execute the script
+      script: /tmp/test.sh
 
 
