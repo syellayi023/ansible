@@ -6,12 +6,12 @@
       name: copy file to the location
       copy:
         src: test.sh
-        dest: /tmp
+        dest: /home/osboxes
         mode: 0755
       delegate_to: localhost
       run_once: yes
     -
       name: execute the script
-      script: /tmp/test.sh
+      script: /home/osboxes/test.sh
 
 
