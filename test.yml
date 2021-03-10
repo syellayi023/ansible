@@ -14,7 +14,8 @@
       run_once: yes
     -
       name: execute the script
-      cmd: sh /tmp/test.sh
+      ansible.builtin.command:
+        cmd: sh /tmp/test.sh
       delegate_to: 127.0.0.1
       
       
