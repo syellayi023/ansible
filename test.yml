@@ -15,7 +15,7 @@
     -
       name: execute the script
       cmd: sh /tmp/test.sh
-      delegate_to: localhost
+      delegate_to: 127.0.0.1
       
       
       
