@@ -6,6 +6,7 @@
     - name: copy the file
       become_user: awx
       become: true
+      become_method: su
       copy:
         src: ./test.sh
         dest: /tmp/test
