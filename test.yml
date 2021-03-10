@@ -4,7 +4,7 @@
   tasks:
     - name: copy the file
       copy:
-        src: test.sh
+        src: ./test.sh
         dest: /tmp/test
         remote_src: yes
         
