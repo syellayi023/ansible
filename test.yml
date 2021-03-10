@@ -1,6 +1,7 @@
 -
   name: execute a script
   hosts: all
+  connection: local
   tasks:
     -
       name: copy file to the location
